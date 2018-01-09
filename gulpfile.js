@@ -3,16 +3,19 @@
 //Main gulp pointer
 var gulp = require('gulp');
 
+//Server
+var devServer = require('gulp-webserver-io');
+
 //watch
 var newer = require('gulp-newer');
 var del = require('del');
 var path = require('path');
 
 //Plugins
-// var less = require('gulp-less');
 var sass   = require('gulp-sass');
 var cssmin = require('gulp-clean-css');
 var rename = require('gulp-rename');
+var babel  = require('gulp-babel');
 
 var paths = {
     assets:  'src/assets/**',
@@ -28,6 +31,16 @@ var paths = {
 var base = { base: 'src' };
 var dest = 'dist';
 
+gulp.task('webserver' , function()
+{
+    return gulp.src('./')
+               .pipe(devServer({
+                   livereload: true,
+                   directoryListing: false,
+                   open: true,
+                   ioDebugger: true // enable the ioDebugger  
+               }));
+});
 gulp.task('images', function (done) {
     return gulp.src(paths.images, base)
                .pipe(newer(dest))
@@ -38,6 +51,9 @@ gulp.task('images', function (done) {
 gulp.task('scripts', function () {
     return gulp.src(paths.scripts, base)
                .pipe(newer(dest))
+               .pipe(babel({
+                    presets: ['env']
+                }))
                .pipe(gulp.dest(dest))
                .on('error', outputError);
 });
@@ -124,7 +140,7 @@ gulp.task('watch', function () {
 gulp.task('src', ['external', 'images', 'css', 'scripts']);
 gulp.task('dev', ['watch']);
 
-gulp.task('default', ['src', 'watch']);
+gulp.task('default', ['src', 'webserver', 'watch']);
 
 //Output Error catch
 function outputError (error) {
