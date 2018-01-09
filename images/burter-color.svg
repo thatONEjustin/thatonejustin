@@ -1,0 +1,12 @@
+<svg width="745" height="467" viewBox="0 0 745 467" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>burter-color</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(25 512)">
+<g id="burter-color">
+<use xlink:href="#path0_fill" transform="matrix(-1 0 0 1 721 -611)" fill="#049AD3"/>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 0 294L 746 566L 746 480L 0 0L 0 294Z"/>
+</defs>
+</svg>
