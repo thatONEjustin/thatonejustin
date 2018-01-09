@@ -16,7 +16,9 @@ body {
   justify-content: center;
   flex-direction: column; }
   .background .ginyuSquadHero {
-    max-width: 50%;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
     position: relative;
     z-index: 100; }
 
@@ -43,14 +45,14 @@ path#path0_fill {
   align-items: flex-start; }
   .splashStreak {
     position: absolute;
-    max-width: 50%;
-    width: 45%; }
+    max-width: 50%; }
     .splashStreak-recoome, .splashStreak-ginyu, .splashStreak-burter {
       top: 0; }
     .splashStreak-ginyu {
       left: 50%;
-      transform: translateX(-50%);
-      height: 50%; }
+      transform: translateX(-53%);
+      height: 50%;
+      max-width: unset; }
     .splashStreak-burter {
       right: 0; }
     .splashStreak-guldo, .splashStreak-jeice {
