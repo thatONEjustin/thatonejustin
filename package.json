@@ -1,0 +1,32 @@
+{
+  "name": "thatonejustin.github.io",
+  "version": "1.0.0",
+  "description": "Keeping my professional career as current as possible, while also just blogging web dev thoughts and snippets",
+  "main": "index.js",
+  "scripts": {
+    "watch": "NODE_ENV=development mix watch",
+    "test": "bundle -v"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thatONEjustin/thatONEjustin.github.io.git"
+  },
+  "keywords": [
+    "web",
+    "dev",
+    "alpinejs",
+    "jekyll",
+    "\u001b[D\u001b[H\u001b[\u001b[F\u001b["
+  ],
+  "author": "Justin P",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thatONEjustin/thatONEjustin.github.io/issues"
+  },
+  "homepage": "https://github.com/thatONEjustin/thatONEjustin.github.io#readme",
+  "devDependencies": {
+    "laravel-mix": "^6.0.25",
+    "laravel-mix-tailwind": "^0.1.2",
+    "tailwindcss": "^2.2.4"
+  }
+}
