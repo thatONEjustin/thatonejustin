@@ -1,5 +1,5 @@
 # thatONEjustin.github.io
-Built with: `jekyll`
+Built with: `jekyll`, `alpinejs`, `laravel-mix`, `tailwindcss`
 
 #### Todo
 - [ ] Clean up JavaScript processing 
