@@ -1,7 +1,7 @@
 module.exports = function (shipit) {
   shipit.initConfig({
     staging: {
-      servers: 'serverpilot@leslash.com'
+      servers: 'localhost:6969'
     }
   })
 
