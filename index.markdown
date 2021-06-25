@@ -5,9 +5,14 @@
 layout: default
 ---
 
-# Stuff 
-*testing out a subtitle with em*
+# Justin P's smooth brain HQ 
+*can't get any smoother than this*
 
-```
-love me some markdown
-```
+
+<div x-data="{ message: 'I really like alpine', bool: false }"
+ x-init="console.log(message)">
+    <h3 x-bind:class="bool || 'text-green-500'" x-text="message"></h3>
+    <button x-on:click="bool = !bool;">This should change stuff</button>
+
+    <p class="cursor-pointer" x-show="bool" x-on:click="alert('not in here')">do @ symbols work?</p>
+</div>
