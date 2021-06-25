@@ -14,5 +14,5 @@ layout: default
     <h3 x-bind:class="bool || 'text-green-500'" x-text="message"></h3>
     <button x-on:click="bool = !bool;">This should change stuff</button>
 
-    <p class="cursor-pointer" x-show="bool" x-on:click="alert('not in here')">do @ symbols work?</p>
+    <p class="cursor-pointer" x-show="bool" @click="alert('not in here')">do @ symbols work?</p>
 </div>
